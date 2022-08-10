@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const name = 'Jeremias Figueroa'
 const at = '@jereconjota'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'About Jere'
 
 export default function Layout({ children, home }) {
   return (
