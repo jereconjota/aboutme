@@ -2,11 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
-  viewport-fit: cover;
+  font-size: 13px;
   background-color: #fafafa;
   color: #1c1c1c;
 }
@@ -39,6 +36,6 @@ img {
 }
 
 #cat {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
