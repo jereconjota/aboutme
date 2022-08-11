@@ -86,10 +86,10 @@ export default function Home() {
             That is why I try to learn a little bit more every day.
           </p>
         </section>
+        <div onClick={easteregg} className="easteregg">
+          <Cat url={catUrl} />
+        </div>
       </Layout>'
-      <div onClick={easteregg}>
-        <Cat url={catUrl} />
-      </div>
     </>
   )
 }
