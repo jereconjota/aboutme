@@ -26,12 +26,10 @@ export default function Cat({ url }) {
     }, []);
 
     return (
-        <div>
             <img src={url} 
             width="75" 
             height="75"
             id="cat"
             ref={ref} />
-        </div>
     )
 }

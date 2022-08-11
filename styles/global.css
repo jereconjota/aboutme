@@ -24,8 +24,6 @@ body {
   margin: 0;
   font-family: 'Press Start 2P', cursive;
   font-size: 14px;
-  background-color: #fafafa;
-  color: #1c1c1c;
   background-color: var(--color-background);
 	color: var(--color-primary);
 
@@ -41,8 +39,7 @@ a {
 }
 
 p {
-  line-height: 1.7;
-  text-align: justify;
+  line-height: 1.8;
 }
 
 a:hover {
