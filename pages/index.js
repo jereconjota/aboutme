@@ -8,13 +8,13 @@ import Cat from '../components/cat'
 
 export default function Home({ allPostsData }) {
 
-  const [darkTheme, setDarkTheme] = useState(undefined);
+  const [darkTheme, setDarkTheme] = useState(false);
   const [catUrl, setCatUrl] = useState("/images/michino.gif");
   const [twitty, setTwitty] = useState("/images/twitty.png");
   const [github, setGithub] = useState("/images/github.png");
   const [blog, setBlog] = useState("/images/blog.png");
   const [checked, setChecked] = useState(true);
-  
+
   const handleToggle = () => {
     setChecked(!checked);
     setDarkTheme(checked);
@@ -80,10 +80,12 @@ export default function Home({ allPostsData }) {
               </Link>
             </li>
           </ul>
-          <p>I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
+          <p>
+            I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
             Since last month I have been really interested in NextJS.
             I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use.
-            That is why I try to <span onClick={handleToggle} className="easteregg">learn a little bit more every day.</span></p>
+            That is why I try to <span onClick={handleToggle} className="easteregg">learn a little bit more every day.</span>
+          </p>
         </section>
       </Layout>
       <Cat url={catUrl} />
