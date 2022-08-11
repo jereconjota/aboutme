@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { useEffect, useState } from "react";
 import Cat from '../components/cat'
 
-export default function Home({ allPostsData }) {
+export default function Home() {
 
   const [darkTheme, setDarkTheme] = useState(false);
   const [catUrl, setCatUrl] = useState("/images/michino.gif");
@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
   const [blog, setBlog] = useState("/images/blog.png");
   const [checked, setChecked] = useState(true);
 
-  const handleToggle = () => {
+  const easteregg = () => {
     setChecked(!checked);
     setDarkTheme(checked);
     if (checked) {
@@ -33,13 +33,12 @@ export default function Home({ allPostsData }) {
 
   useEffect(() => {
     const root = window.document.documentElement;
-    const initialColorValue = root.style.getPropertyValue(
-      "--initial-color-mode",
-    );
-    console.log("init", initialColorValue);
-
-    setDarkTheme(initialColorValue === "dark");
+    // const initialColorValue = root.style.getPropertyValue(
+    //   "--initial-color-mode",
+    // );
+    setDarkTheme(false);
   }, []);
+
   useEffect(() => {
     if (darkTheme !== undefined) {
       if (darkTheme) {
@@ -84,11 +83,13 @@ export default function Home({ allPostsData }) {
             I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
             Since last month I have been really interested in NextJS.
             I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use.
-            That is why I try to <span onClick={handleToggle} className="easteregg">learn a little bit more every day.</span>
+            That is why I try to learn a little bit more every day.
           </p>
         </section>
-      </Layout>
-      <Cat url={catUrl} />
+      </Layout>'
+      <div onClick={easteregg}>
+        <Cat url={catUrl} />
+      </div>
     </>
   )
 }
