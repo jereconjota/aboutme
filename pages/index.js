@@ -81,7 +81,6 @@ export default function Home() {
           </ul>
           <p>
             I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
-            Since last month I have been really interested in NextJS.
             I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use.
             That is why I try to learn a little bit more every day.
           </p>
