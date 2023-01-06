@@ -22,12 +22,11 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-family: 'Press Start 2P', cursive;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   overflow: hidden;
   padding: 0;
-
-  /*  */
+  height: 100vh;
 }
 
 * {
@@ -120,4 +119,5 @@ img {
 
 .catName {
   font-size: xx-small;
+  margin-top: 50px;
 }

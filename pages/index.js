@@ -63,18 +63,18 @@ export default function Home() {
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`} >
           <ul className={utilStyles.list}>
             <li className={utilStyles.listItem}>
-              <Link href="https://github.com/jereconjota">
-                <a target="_blank"><Image src={github} alt="Github" width={36} height={36} /></a>
+              <Link href="https://github.com/jereconjota" target='_blank'>
+                <Image src={github} alt="Github" width={36} height={36} />
               </Link>
             </li>
             <li className={utilStyles.listItem}>
-              <Link href="https://notes.jereconjota.com">
-                <a target="_blank"><Image src={blog} alt="blog" width={36} height={36} /></a>
+              <Link href="https://notes.jereconjota.com" target='_blank'>
+                <Image src={blog} alt="blog" width={36} height={36} />
               </Link>
             </li>
             <li className={utilStyles.listItem}>
-              <Link href="https://twitter.com/jereconj0ta">
-                <a target="_blank"><Image src={twitty} alt="twitter" width={36} height={36} /></a>
+              <Link href="https://twitter.com/jereconj0ta" target='_blank'>
+                <Image src={twitty} alt="twitter" width={36} height={36} />
               </Link>
             </li>
           </ul>
