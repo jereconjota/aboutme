@@ -8,9 +8,9 @@ export default function Home() {
 
   const [darkTheme, setDarkTheme] = useState(false);
   const [cat, setCat] = useState("michino");
-  const [twitty, setTwitty] = useState("/images/twitty.png");
-  const [github, setGithub] = useState("/images/github.png");
-  const [blog, setBlog] = useState("/images/blog.png");
+  const [twitty, setTwitty] = useState("twitter");
+  const [github, setGithub] = useState("github");
+  const [blog, setBlog] = useState("dino");
   const [checked, setChecked] = useState(true);
 
   const easteregg = () => {
@@ -18,14 +18,14 @@ export default function Home() {
     setDarkTheme(checked);
     if (checked) {
       setCat("rami");
-      setTwitty("/images/twitty-l.png");
-      setGithub("/images/github-l.png");
-      setBlog("/images/blog-l.png");
+      setTwitty("twitter-white");
+      setGithub("github-white");
+      setBlog("dino-white");
     } else {
       setCat("michino");
-      setTwitty("/images/twitty.png");
-      setGithub("/images/github.png");
-      setBlog("/images/blog.png");
+      setTwitty("twitter");
+      setGithub("github");
+      setBlog("dino");
     }
   };
 
@@ -60,28 +60,32 @@ export default function Home() {
         </Head>
 
         <section className='info'>
-          <ul className='list'>
-            <li className='listItem'>
-              <Link href="https://github.com/jereconjota" target='_blank'>
-                <Image src={github} alt="Github" width={36} height={36} />
-              </Link>
-            </li>
-            <li className='listItem'>
-              <Link href="https://notes.jereconjota.com" target='_blank'>
-                <Image src={blog} alt="blog" width={36} height={36} />
-              </Link>
-            </li>
-            <li className='listItem'>
-              <Link href="https://twitter.com/jereconj0ta" target='_blank'>
-                <Image src={twitty} alt="twitter" width={36} height={36} />
-              </Link>
-            </li>
-          </ul>
           <p onClick={easteregg} >
             I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
             I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use.
             That is why I try to learn a little bit more every day.
           </p>
+          <ul className='list'>
+            <li className='listItem'>
+            <div className='icon-box'>
+                  <div className={github}></div>
+                </div>
+            </li>
+            <li className='listItem'>
+              <Link href="https://notes.jereconjota.com" target='_blank'>
+                <div className='icon-box'>
+                  <div className={blog}></div>
+                </div>
+              </Link>
+            </li>
+            <li className='listItem'>
+              <Link href="https://twitter.com/jereconj0ta" target='_blank'>
+                <div className='icon-box'>
+                  <div className={twitty}></div>
+                </div>
+              </Link>
+            </li>
+          </ul>
         </section>
 
         <div className='easteregg'>
