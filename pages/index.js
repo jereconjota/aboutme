@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from "react";
@@ -60,19 +59,19 @@ export default function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
         </Head>
 
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`} >
-          <ul className={utilStyles.list}>
-            <li className={utilStyles.listItem}>
+        <section className='info'>
+          <ul className='list'>
+            <li className='listItem'>
               <Link href="https://github.com/jereconjota" target='_blank'>
                 <Image src={github} alt="Github" width={36} height={36} />
               </Link>
             </li>
-            <li className={utilStyles.listItem}>
+            <li className='listItem'>
               <Link href="https://notes.jereconjota.com" target='_blank'>
                 <Image src={blog} alt="blog" width={36} height={36} />
               </Link>
             </li>
-            <li className={utilStyles.listItem}>
+            <li className='listItem'>
               <Link href="https://twitter.com/jereconj0ta" target='_blank'>
                 <Image src={twitty} alt="twitter" width={36} height={36} />
               </Link>
@@ -86,7 +85,7 @@ export default function Home() {
         </section>
 
         <div className='easteregg'>
-        <p className='catName'>{cat}</p>
+          <p className='catName'>{cat}</p>
           <div className={cat}></div>
         </div>
       </Layout>
