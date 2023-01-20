@@ -61,7 +61,7 @@ img {
   -o-animation: x 1s infinite;
   -webkit-animation: x 1s infinite;
   animation: x 1s infinite;
-  left: 40%;
+  left: 43%;
   margin-top: .5rem;
   position: absolute;
   top: 50%;
@@ -89,7 +89,7 @@ img {
   -o-animation: y 1s infinite;
   -webkit-animation: y 1s infinite;
   animation: y 1s infinite;
-  left: 40%;
+  left: 43%;
   margin-top: .5rem;
   position: absolute;
   top: 50%;
