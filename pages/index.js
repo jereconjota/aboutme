@@ -67,9 +67,11 @@ export default function Home() {
           </p>
           <ul className='list'>
             <li className='listItem'>
-            <div className='icon-box'>
+              <Link href="https://github.com/jereconjota" target='_blank'>
+                <div className='icon-box'>
                   <div className={github}></div>
                 </div>
+              </Link>
             </li>
             <li className='listItem'>
               <Link href="https://notes.jereconjota.com" target='_blank'>
