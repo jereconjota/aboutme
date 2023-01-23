@@ -11,6 +11,7 @@ export default function Home() {
   const [twitty, setTwitty] = useState("twitter");
   const [github, setGithub] = useState("github");
   const [blog, setBlog] = useState("dino");
+  const [linkedin, setLinkedin] = useState("linkedin")
   const [checked, setChecked] = useState(true);
 
   const easteregg = () => {
@@ -21,11 +22,13 @@ export default function Home() {
       setTwitty("twitter-white");
       setGithub("github-white");
       setBlog("dino-white");
+      setLinkedin("linkedin-white")
     } else {
       setCat("michino");
       setTwitty("twitter");
       setGithub("github");
       setBlog("dino");
+      setLinkedin("linkedin")
     }
   };
 
@@ -67,13 +70,6 @@ export default function Home() {
           </p>
           <ul className='list'>
             <li className='listItem'>
-              <Link href="https://github.com/jereconjota" target='_blank'>
-                <div className='icon-box'>
-                  <div className={github}></div>
-                </div>
-              </Link>
-            </li>
-            <li className='listItem'>
               <Link href="https://notes.jereconjota.com" target='_blank'>
                 <div className='icon-box'>
                   <div className={blog}></div>
@@ -81,9 +77,23 @@ export default function Home() {
               </Link>
             </li>
             <li className='listItem'>
+              <Link href="https://github.com/jereconjota" target='_blank'>
+                <div className='icon-box'>
+                  <div className={github}></div>
+                </div>
+              </Link>
+            </li>
+            <li className='listItem'>
               <Link href="https://twitter.com/jereconj0ta" target='_blank'>
                 <div className='icon-box'>
                   <div className={twitty}></div>
+                </div>
+              </Link>
+            </li>
+            <li className='listItem'>
+              <Link href="https://www.linkedin.com/in/jereconjota/" target='_blank'>
+                <div className='icon-box'>
+                  <div className={linkedin}></div>
                 </div>
               </Link>
             </li>
