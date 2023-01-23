@@ -100,7 +100,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <div className='easteregg'>
+        <div className='easteregg' onClick={easteregg}>
           <p className='catName'>{cat}</p>
           <div className={cat}></div>
         </div>
