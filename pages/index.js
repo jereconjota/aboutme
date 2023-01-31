@@ -1,8 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useEffect, useState } from "react";
+
+const companyLink = '<a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>';
+
+const en = `I am a backend developer from Comodoro Rivadavia, I currently work remotely for ${companyLink}. </br>I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use. That is why I try to learn a little bit more every day.`
+const es = `Soy desarrollador backend de la ciudad de Comodoro Rivadavia, altualmete trabajo de manera remota para  ${companyLink}. </br> Creo en la importancia de entender como encarar un proyecto, para saber elegir las mejores herramientas y tecnologias para resolverlo. Es por eso que intento aprender un poco mas cada dia.`
+
+const LANGUAGE = ['es', 'es-AR', 'es-MX', 'es-419'];
 
 export default function Home() {
 
@@ -13,6 +19,8 @@ export default function Home() {
   const [blog, setBlog] = useState("dino");
   const [linkedin, setLinkedin] = useState("linkedin")
   const [checked, setChecked] = useState(true);
+
+  const [aboutMe, setAboutMe] = useState('')
 
   const easteregg = () => {
     setChecked(!checked);
@@ -52,22 +60,19 @@ export default function Home() {
     }
   }, [darkTheme]);
 
+  useEffect(() => {
+    setAboutMe(LANGUAGE.includes(navigator.language) ? es : en)
+  }, [])
+
   return (
     <>
       <Layout home>
         <Head>
           <title>{siteTitle}</title>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
         </Head>
 
         <section className='info'>
-          <p onClick={easteregg} >
-            I am a backend developer from Comodoro Rivadavia, I currently work remotely for <a href="https://www.genosha.com.ar/" target="_blank">Genosha</a>.
-            I believe it is important to know how to approach and resolve problems, then we can choose what technologies to use.
-            That is why I try to learn a little bit more every day.
-          </p>
+          <p onClick={easteregg} dangerouslySetInnerHTML={{ __html: aboutMe }} ></p>
           <ul className='list'>
             <li className='listItem'>
               <Link href="https://notes.jereconjota.com" target='_blank'>
