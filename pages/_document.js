@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
-					
+					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/theme-toggles@4.10.1/css/dark-inner.min.css" />
 				</Head>
 				<body>
 					<script

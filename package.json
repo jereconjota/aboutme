@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@theme-toggles/react": "^4.1.0",
     "date-fns": "^2.11.1",
     "eslint-config-next": "^13.1.1",
     "gray-matter": "^4.0.2",
