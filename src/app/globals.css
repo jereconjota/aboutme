@@ -18,7 +18,7 @@ body {
   justify-content: flex-start;
   max-width: 36rem;
   margin: 0 auto;
-  padding: 1.3rem;
+  padding: 1rem 1.2rem;
 }
 
 a {
@@ -29,6 +29,7 @@ a {
 p {
   margin: 1rem 0;
   font-size: 1.2rem;
+  line-height: 25px;
 }
 /* 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +50,7 @@ p {
 /* iPhone browser */
 @media (max-width: 400px) { 
   p {
-    font-size: .925rem;
+    font-size: .950rem;
+    line-height: 20px;
   }
 }
