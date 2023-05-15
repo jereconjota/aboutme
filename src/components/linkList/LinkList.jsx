@@ -1,18 +1,18 @@
 import Link from "next/link";
-import styles from './LinkList.module.css'
+import "linklist.css";
 
 async function LinkList({ links }) {
 
 
     return (
-        <ul className={styles.list}>
+        <ul className='list'>
             {
                 links.map((link, index) => {
                     return (
-                        <li className={styles.listItem} key={index}>
+                        <li className='listItem' key={index}>
                             <Link href={link.url} target='_blank'>
-                                <div className={styles.iconBox}>
-                                    <div className={styles[link.name.toLowerCase()]}></div>
+                                <div className='iconBox'>
+                                    <div className={link.name.toLowerCase()}></div>
                                 </div>
                             </Link>
                         </li>
