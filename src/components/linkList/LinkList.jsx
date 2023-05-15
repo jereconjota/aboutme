@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './linkList.module.css'
+import styles from './LinkList.module.css'
 
 async function LinkList({ links }) {
 
