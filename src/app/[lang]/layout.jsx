@@ -21,7 +21,7 @@ export default function RootLayout({ children, params }) {
   return (
     <html lang={params.lang}>
       <body className={ShareTechMono.className}>
-        <Toggle />
+        {/* <Toggle /> */}
         {children}
       </body>
     </html>
