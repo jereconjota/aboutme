@@ -1,5 +1,6 @@
 'use client'
 import LinkList from './linkList/LinkList'
+import SwitchLang from './SwitchLang'
 
 function Info({ data }) {
     const theme = () => {
@@ -11,6 +12,7 @@ function Info({ data }) {
             <p style={{}}>
                 {data.text}
             </p>
+            <SwitchLang />
             <LinkList links={data.links} />
         </section>
     )

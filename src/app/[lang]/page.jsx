@@ -14,9 +14,9 @@ export default async function Home({ params }) {
   const data = await getPersonalData(params.lang);
   return (
     <main className='main'>
-      <Hero data={data}/>
-      <Info data={data}/>
-
+      {data && <Hero data={data}/> }
+      {data && <Info data={data}/> }
+      
       <div className={styles.easteregg} >
         <p className={styles.catName}>michino</p>
         <div className={styles.michino}></div>

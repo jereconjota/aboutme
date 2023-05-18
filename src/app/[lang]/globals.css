@@ -18,7 +18,7 @@ body {
   justify-content: flex-start;
   max-width: 36rem;
   margin: 0 auto;
-  padding: 1rem 1.2rem;
+  padding: .8rem 1.2rem;
 }
 
 a {
@@ -27,8 +27,8 @@ a {
 }
 
 p {
-  margin: 1rem 0;
-  font-size: 1.2rem;
+  margin: .5rem 0;
+  font-size: 1.1rem;
   line-height: 25px;
 }
 /* 
@@ -50,7 +50,12 @@ p {
 /* iPhone browser */
 @media (max-width: 400px) { 
   p {
-    font-size: .950rem;
+    font-size: .865rem;
     line-height: 20px;
   }
+}
+
+
+.select {
+  text-decoration: underline;
 }

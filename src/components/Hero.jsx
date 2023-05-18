@@ -5,7 +5,7 @@ import { useState } from "react"
 function Hero({ data }) {
     const imgUrl = `/profile.jpg`
     return (
-        <div style={{ textAlign: 'center', marginBottom: ".8rem" }}>
+        <div style={{ textAlign: 'center', marginBottom: ".5rem" }}>
             <div >
                 <Image 
                 src={imgUrl}
