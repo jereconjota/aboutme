@@ -9,7 +9,7 @@ function Info({ data }) {
     return (
         <section className='info'>
             <p style={{}}>
-                {data.paragraph}
+                {data.text}
             </p>
             <LinkList links={data.links} />
         </section>
