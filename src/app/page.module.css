@@ -56,6 +56,14 @@
 .easteregg {
     position: relative;
     text-align: center;
+    margin-top: 2rem;
+}
+
+/* mobile */
+@media (max-width: 440px) { 
+  .easteregg {
+    margin-top: .5rem;
+}
 }
 
 .catName {
