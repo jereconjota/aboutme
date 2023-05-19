@@ -31,6 +31,7 @@ p {
   font-size: 1.1rem;
   line-height: 25px;
 }
+
 /* 
 @media (prefers-color-scheme: dark) {
   html {
@@ -46,16 +47,49 @@ p {
   background: #61dafb;
 }
 
-/* mobile */
-/* iPhone browser */
-@media (max-width: 400px) { 
-  p {
-    font-size: .865rem;
-    line-height: 20px;
-  }
-}
-
-
 .select {
   text-decoration: underline;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.lang {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1.4rem auto;
+}
+
+/* mobile */
+@media (max-width: 410px) { 
+  p {
+    font-size: .87rem;
+    line-height: 20px;
+    margin: .5rem 0 0 0;
+  }
+  .lang {
+    margin: 1rem auto;
+    font-size: .8rem;
+  }
+}
+
+/* iPhone browser */
+@media (max-width: 380px) {
+  .lang {
+    margin: 0.5rem auto 0 auto;
+  }
+} 
+
+/* Fold */
+@media (max-width: 280px) {
+  h1, h2 {
+    font-size: medium;
+  }
+  p {
+    font-size: .7rem;
+    line-height: 18px;
+  }
+} 
+

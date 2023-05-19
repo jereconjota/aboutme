@@ -1,17 +1,16 @@
-import Info from '../../components/Info'
-import Hero from '../../components/Hero'
+import Info from '../components/Info'
+import Hero from '../components/Hero'
 import styles from './page.module.css'
 
-async function getPersonalData(lang) {
+async function getPersonalData() {
   const res = await fetch('https://eipiai.vercel.app/api/data-jere');
   const data = await res.json();
-  const dataLang = await data.find((item) => item.lang === lang);
-  return dataLang;
+  return data;
 }
 
 
-export default async function Home({ params }) {
-  const data = await getPersonalData(params.lang);
+export default async function Home() {
+  const data = await getPersonalData();
   return (
     <main className='main'>
       {data && <Hero data={data}/> }

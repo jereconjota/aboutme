@@ -10,6 +10,8 @@ function loading() {
                 <Skeleton height={30} width={200} />
                 <Skeleton height={20} width={100} />
                 <Skeleton width={300} count={8} />
+                <Skeleton width={30} count={1} />
+
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "20px" }}>
                     <Skeleton circle={true} height={40} width={40} />
                     <Skeleton circle={true} height={40} width={40} />

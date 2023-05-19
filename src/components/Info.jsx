@@ -1,18 +1,12 @@
 'use client'
 import LinkList from './linkList/LinkList'
-import SwitchLang from './SwitchLang'
+import Text from './Text'
 
 function Info({ data }) {
-    const theme = () => {
-        console.log("theme")
-    }
 
     return (
         <section className='info'>
-            <p style={{}}>
-                {data.text}
-            </p>
-            <SwitchLang />
+            <Text paragraphs={data.paragraph} />
             <LinkList links={data.links} />
         </section>
     )
