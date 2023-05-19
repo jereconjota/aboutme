@@ -4,10 +4,9 @@
     -o-animation: x 1s infinite;
     -webkit-animation: x 1s infinite;
     animation: x 1s infinite;
-    /* left: 43%;
-    margin-top: .5rem;
+    margin: 10px auto 0px auto;
     position: absolute;
-    top: 50%; */
+    right: 20px;
   }
   
   @keyframes x {
@@ -32,8 +31,9 @@
     -o-animation: y 1s infinite;
     -webkit-animation: y 1s infinite;
     animation: y 1s infinite;
-    /* left: 0%; */
-    /* margin-top: .1r */
+    margin: 10px auto 0px auto;
+    position: absolute;
+    right: 20px;
   }
   
   @keyframes y {

@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 function Hero({ data }) {
-    const imgUrl = `/profile.jpg`
+    const imgUrl = `/profile.png`
     return (
         <div style={{ textAlign: 'center', marginBottom: ".5rem" }}>
             <div >

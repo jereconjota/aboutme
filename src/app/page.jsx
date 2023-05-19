@@ -17,7 +17,7 @@ export default async function Home() {
       {data && <Info data={data}/> }
       
       <div className={styles.easteregg} >
-        <p className={styles.catName}>michino</p>
+        {/* <p className={styles.catName}>michino</p> */}
         <div className={styles.michino}></div>
       </div>
 
