@@ -18,7 +18,7 @@ export default async function Home() {
       
       <div className={styles.easteregg} >
         {/* <p className={styles.catName}>michino</p> */}
-        <div className={styles.michino}></div>
+        <div className={styles.rami}></div>
       </div>
 
     </main>
