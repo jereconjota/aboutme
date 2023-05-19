@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 function Hero({ data }) {
-    const imgUrl = `/profile.png`
+    const imgUrl = `/profile.jpg`
     return (
         <div style={{ textAlign: 'center', marginBottom: ".5rem" }}>
             <div >
@@ -10,7 +10,7 @@ function Hero({ data }) {
                 alt={data.username}
                 width={120}
                 height={120}
-                style={{ borderRadius: '4%' }}
+                style={{ borderRadius: '4%', margin: '1rem' }}
                 />
             </div>
             <h1 style={{ textAlign: 'center', padding: '.2rem' }}>{data.name}</h1>
