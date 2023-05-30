@@ -1,6 +1,7 @@
 import './globals.css'
 import { Share_Tech_Mono } from 'next/font/google'
 import Toggle from '../components/Toggle'
+import { Analytics } from '@vercel/analytics/react';
 
 const ShareTechMono = Share_Tech_Mono({
   weight: '400',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={ShareTechMono.className}>
         {/* <Toggle /> */}
         {children}
+        <Analytics />
       </body>
     </html>
   )
