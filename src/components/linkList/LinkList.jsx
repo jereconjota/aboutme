@@ -12,7 +12,8 @@ async function LinkList({ links }) {
                         <li className='listItem' key={index}>
                             <Link href={link.url} target='_blank'>
                                 <div className='iconBox'>
-                                    <div className={`${link.name.toLowerCase()}-white`}></div>
+                                    {/* <div className={`${link.name.toLowerCase()}-white`}></div> */}
+                                    <div className={`${link.name.toLowerCase()}`}></div>
                                 </div>
                             </Link>
                         </li>

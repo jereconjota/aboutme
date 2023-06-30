@@ -14,7 +14,7 @@ function Hero({ data }) {
                 />
             </div>
             <h1 style={{ textAlign: 'center', padding: '.2rem' }}>{data.name}</h1>
-            <h2 style={{ padding: '.2rem', color: "#61dafb" }}>@{data.username}</h2>
+            <h2 style={{ padding: '.2rem', color: "#00bcd4" }}>@{data.username}</h2>
         </div>
     )
 }
