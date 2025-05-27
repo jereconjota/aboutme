@@ -1,6 +1,5 @@
 import './globals.css'
 import { Share_Tech_Mono } from 'next/font/google'
-import Toggle from '../components/Toggle'
 import { Analytics } from '@vercel/analytics/react';
 
 const ShareTechMono = Share_Tech_Mono({
