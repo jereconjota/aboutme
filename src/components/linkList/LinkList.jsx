@@ -1,8 +1,7 @@
 import Link from "next/link";
 import "./linklist.css";
 
-async function LinkList({ links }) {
-
+function LinkList({ links }) {
 
     return (
         <ul className='list'>

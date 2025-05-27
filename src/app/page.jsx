@@ -15,13 +15,6 @@ export default async function Home() {
     <main className='main'>
       {data && <Hero data={data}/> }
       {data && <Info data={data}/> }
-      
-      <div className={styles.easteregg} >
-        {/* <p className={styles.catName}>michino</p> */}
-        {/* <div className={styles.rami}></div> */}
-        <div className={styles.michino}></div>
-      </div>
-
     </main>
   )
 }

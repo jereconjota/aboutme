@@ -10,7 +10,7 @@ const ShareTechMono = Share_Tech_Mono({
 
 export const metadata = {
   title: 'About Jere',
-  description: 'Developer & Dragon Ball lover',
+  description: 'Developer & Dragon Ball lover'
 }
 
 export default function RootLayout({ children }) {
