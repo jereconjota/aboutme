@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./linklist.css";
+import Image from "next/image"
 
 function LinkList({ links }) {
 
@@ -10,10 +11,7 @@ function LinkList({ links }) {
                     return (
                         <li className='listItem' key={index}>
                             <Link href={link.url} target='_blank'>
-                                <div className='iconBox'>
-                                    {/* <div className={`${link.name.toLowerCase()}-white`}></div> */}
-                                    <div className={`${link.name.toLowerCase()}`}></div>
-                                </div>
+                                <Image src={link.localImage} alt={link.name} width={40} height={40} />
                             </Link>
                         </li>
                     )
