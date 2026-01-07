@@ -17,7 +17,7 @@
     "eslint": "8.40.0",
     "eslint-config-next": "15.3.2",
     "negotiator": "^0.6.3",
-    "next": "15.3.2",
+    "next": "15.3.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-loading-skeleton": "^3.3.1",
